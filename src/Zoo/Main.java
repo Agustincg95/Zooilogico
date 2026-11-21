@@ -3,6 +3,7 @@ package Zoo;
 
 import Zoo.Anfibio.Rana;
 import Zoo.Anfibio.Salamandra;
+import Zoo.Reptiles.DragonDeKomodo;
 import Zoo.Reptiles.Tortuga;
 import Zoo.Ave.Loro;
 import Zoo.Mamifero.Elefante;
@@ -26,6 +27,11 @@ public class Main {
         listaDeAnimales.add(new Elefante());
         listaDeAnimales.add(new PezEspada());
         listaDeAnimales.add(new Hormiga());
+
+        DragonDeKomodo.listaDeAnimales = listaDeAnimales;
+        // Igualo la lista creada en la clase con la lista de todos los animales.
+        // Asi conoce los animales de la lista y... podrá morderlos!!
+        listaDeAnimales.add(new DragonDeKomodo());
 
         // Cada alumno puede añadir su animal así:
         // listaDeAnimales.add(new SuAnimal());
